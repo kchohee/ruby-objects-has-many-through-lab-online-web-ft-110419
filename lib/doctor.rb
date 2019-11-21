@@ -15,6 +15,6 @@ class Doctor
     return Appointment.new(my_date,my_person,self)
   end
   def patients
-    self.appointments.collect{|a| a.patient}
+    Appointments.collect{|a| a.patient}
   end
 end
